@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Hallucination Quiz</title>
+  <script>
+    function toggleAnswers() {
+      const answers = document.getElementById("answers");
+      answers.style.display = answers.style.display === "none" ? "block" : "none";
+    }
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    h1, h2 {
+      color: #80005a;
+    }
+    button {
+      background-color: #80005a;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    button:hover {
+      background-color: #a00070;
+    }
+    #answers {
+      display: none;
+      margin-top: 2rem;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-left: 4px solid #80005a;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 AI Quiz: “Truth or Hallucination?”</h1>
+  <h2>The Summary That Lies to You (Just a Little)</h2>
+  <p>Below is a <em>completely believable</em> AI-generated summary of Ninety One’s 2024 Sustainability & Stewardship Report. It sounds correct. It sounds responsible. It sounds... like it’s had one too many flat whites.</p>
+  <p>But hidden inside are <strong>four fabricated “facts”</strong> — hallucinations dressed in Patagonia vests. Can you spot them?</p>
+
+  <h3>Summary:</h3>
+  <p>The 2024 Sustainability and Stewardship Report by Ninety One underscores its holistic approach to sustainability through its “Invest, Advocate, Inhabit” framework. Over the reporting period, the firm made notable strides in responsible investing, launching new sustainable strategies—including the <strong>Africa Carbon Resilience Fund</strong>—and increasing its sustainable AUM to <strong>£7.1 billion</strong>, up from £5.3 billion the previous year.</p>
+
+  <p>As a signatory of the Net Zero Asset Managers initiative, Ninety One reaffirmed its commitment to achieving <strong>net-zero emissions by 2045</strong>, with clear interim targets for 2030. The firm reported a <strong>35% reduction in Scope 1 and 2 emissions</strong> from its 2019 baseline and achieved carbon neutrality across Scopes 1, 2, and 3, including emissions from upstream suppliers and IT infrastructure. Its Cape Town office became the <strong>first building in South Africa</strong> to be fully powered by on-site solar generation under a green municipal wheeling agreement.</p>
+
+  <p>The firm also expanded its impact-driven philanthropy. The <strong>Changeblazers</strong> programme now supports over <strong>1,000 students</strong> across sub-Saharan Africa, while Ninety One Green and RedSTART initiatives continued to drive grassroots financial literacy and climate education in local schools.</p>
+
+  <p>On the advocacy front, Ninety One participated in global efforts including GFANZ, the Sustainable Markets Initiative, and the TNFD Forum. It was one of the <strong>lead investor delegations at COP28</strong>, where it advocated for enhanced blended finance solutions and pushed for mandatory biodiversity disclosures alongside carbon. It also hosted the first "Just Transition Roundtable" in partnership with the World Economic Forum and the African Development Bank.</p>
+
+  <p>The report also highlighted the firm’s increasing use of proprietary data platforms, AI-enhanced ESG analysis, and scenario-modelling tools. These have been embedded across equity, fixed income, and private markets to monitor the climate resilience of assets and assess exposure to nature-related risks.</p>
+
+  <p>Throughout, the firm reinforced its belief that sustainability is not a standalone trend but a fiduciary duty—and that emerging markets must be central to any global solution. As CEO Hendrik du Toit writes in the foreword: <em>“Sustainability without inclusion is failure by another name.”</em></p>
+
+  <button onclick="toggleAnswers()">Reveal the 4 Lies</button>
+  <div id="answers">
+    <h3>🕵️‍♀️ Answer Key:</h3>
+    <ul>
+      <li><strong>“Africa Carbon Resilience Fund”</strong> – This fund does not exist. The real launch was the <em>Emerging Markets Transition Debt Strategy</em>.</li>
+      <li><strong>“Net zero by 2045”</strong> – The official commitment is <em>net-zero by 2050 or sooner</em>.</li>
+      <li><strong>“35% reduction in Scope 1 and 2 emissions”</strong> – The actual reported figure is a <em>25% reduction</em>.</li>
+      <li><strong>“Changeblazers supports 1,000 students”</strong> – In reality, the programme supports just over <em>100 students</em> as of 2024.</li>
+    </ul>
+    <p>Score 4/4? You’re basically Compliance. Missed them all? Don’t worry — so did most chatbots.</p>
+  </div>
+</body>
+</html>
